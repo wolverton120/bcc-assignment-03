@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Finder</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-purple-950 text-white min-h-screen flex flex-col">
+
+  <header class="bg-gray-900 px-6 py-4">
+    <h1 class="text-2xl font-bold text-lime-300">Food Finder</h1>
+  </header>
+
+  <main class="flex-1 py-10 px-6">
+    <div class="max-w-3xl mx-auto text-center mb-8">
+      <h2 class="text-3xl font-bold text-lime-300 mb-6">Search Meals By Country Below</h2>
+      <div class="flex justify-center gap-2">
+        <input id="inputfield" type="text" placeholder="Enter country (Russian, Italian etc)..." class="px-4 py-2 w-72 bg-purple-800 border-lime-400">
+        <button id="searchbutton" class="px-5 py-2 bg-lime-400 text-gray-900 hover:scale-105">Search</button>
+      </div>
+    </div>
+
+    <div id="cardgrid" class="container"></div>
+  </main>
+
+  <footer class="bg-gray-900 py-4 text-center text-purple-300">
+    Varsityr agerdin 2ta porjonto class keno vai. Amra ghumabo konshomoy
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
