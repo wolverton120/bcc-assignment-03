@@ -2,7 +2,7 @@ const input = document.getElementById("inputfield");
 const button = document.getElementById("searchbutton");
 const container = document.getElementById("cardgrid");
 
-function fetchMeals(country) {
+function fetchmeal(country) {
   container.innerHTML = "";
   let url = "https://www.themealdb.com/api/json/v1/1/filter.php?a=" + country;
 
@@ -28,7 +28,7 @@ function fetchMeals(country) {
 button.addEventListener("click", function() {
   let country = input.value.trim();
   if (country) {
-    fetchMeals(country);
+    fetchmeal(country);
   }
 });
 
@@ -36,7 +36,7 @@ input.addEventListener("keypress", function(e) {
   if (e.key === "Enter") {
     let country = input.value.trim();
     if (country) {
-      fetchMeals(country);
+      fetchmeal(country);
     }
   }
 });
